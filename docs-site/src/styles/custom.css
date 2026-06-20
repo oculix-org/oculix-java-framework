@@ -1,0 +1,16 @@
+/*
+ * Custom theme tweaks for OculiX Java Framework docs.
+ * Kept minimal on purpose — Starlight's defaults are good.
+ */
+
+:root {
+  --sl-color-accent-low: #1a3d2e;
+  --sl-color-accent: #2d8659;
+  --sl-color-accent-high: #7fd9a8;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d1f5e3;
+  --sl-color-accent: #1f6b44;
+  --sl-color-accent-high: #0f3d27;
+}

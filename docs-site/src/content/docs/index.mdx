@@ -1,0 +1,52 @@
+---
+title: OculiX Java Framework
+description: Java framework on top of OculiX — Manager-based wrappers, page-object friendly.
+template: splash
+hero:
+  tagline: |
+    A thin, opinionated Java layer on top of OculiX.
+    Seven Managers, zero magic, page-objects friendly.
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Get started
+      link: /getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: Read the architecture
+      link: /architecture/
+      icon: external
+      variant: minimal
+    - text: View on GitHub
+      link: https://github.com/oculix-org/oculix-java-framework
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why this framework?
+
+OculiX gives you a precise, deterministic visual-automation engine. This framework
+gives you a clean, page-object-friendly Java API on top of it — so you can write
+tests and automation code that **reads like a domain workflow**, not like a stream
+of low-level screen calls.
+
+<CardGrid stagger>
+  <Card title="Seven Managers" icon="open-book">
+    Each Manager owns one responsibility: screen, click, type, wait, OCR, regions,
+    captures. No god-classes.
+  </Card>
+  <Card title="Thread-isolated screens" icon="puzzle">
+    A `ThreadLocal<Region>` lets you drive multiple sessions in parallel without
+    static-state collisions.
+  </Card>
+  <Card title="PaddleOCR ready" icon="magnifier">
+    Built-in HTTP client for PaddleOCR, auto-launched from a pypi-installed
+    console script. No Docker, no shell glue.
+  </Card>
+  <Card title="Deterministic by design" icon="approve-check">
+    No LLM in the loop. The engine sees pixels, the framework wraps them, you
+    drive the intent.
+  </Card>
+</CardGrid>
